@@ -187,8 +187,8 @@ form.formulario {
 label.etiqueta {
     display: block;
     width: 100%;
-    margin: 20px 0px 0px 10px;
-    padding: 0;
+    padding: 10px;
+    margin: 0px;
     font-size: 1.1em;
     color: white;
 }
@@ -284,5 +284,18 @@ input[type="submit"]:hover {
 
     .enlaces a {
         width: 100%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .enlaces a {
+        width: 100%;
+        margin: 4px;
+        padding: 1px 0;
     }
 }
