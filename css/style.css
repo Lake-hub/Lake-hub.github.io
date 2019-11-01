@@ -287,7 +287,7 @@ input[type="submit"]:hover {
     }
 }
 
-@media all and (max-width: 418s) {
+@media all and (max-width: 418px) {
     img {
         width: 100px;
         height: 100px;
