@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>SISTEMA</title>
+		<link rel="shortcut icon" href="" type="image/x-icon">
+
+		<!--HOJA DE ESTILO CSS-->
+		<link rel="stylesheet" href="/css/style.css">
+
+		<!--FUENTES-->
+		<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+		<!--KIT ICONS-->
+		<script src="https://kit.fontawesome.com/bf5a6d8b05.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<div class="padre">
+			<section class="principal">
+				<nav class="navegacion">
+					<div class="logo">
+						<img src="/images/user.png" alt="Logo de la empresa">
+					</div>
+					<div class="enlaces">
+						<a href="#"><i class="fas fa-user-plus"></i><span> Crear cliente</span></a>
+						<a href="#"><i class="fas fa-users"></i><span> Listar clientes</span></a>
+						<a href="#"><i class="fas fa-calculator"></i><span> Crear Préstamo</span></a>
+						<a href="#"><i class="fas fa-book"></i><span> Listar Préstamos</span></a>
+					</div>
+				</nav>
+				<article class="articulo">
+					<div class="titulo">
+						<h1>Crear cliente</h1>
+					</div>
+					
+					<div class="contenido">
+						<!--
+							AQUI VA EL FORMULARIO QUE HEREDARÁ LA PLANTILLA EN EL BACKEND
+						-->
+						<form class="formulario" action="" method="POST">
+							<label class="etiqueta" for="telefono">Nombre</label>
+							<input type="text">
+				
+							<label class="etiqueta" for="apellido">Apellido</label>
+							<input class="input" type="text" id="apellido">
+				
+							<label class="etiqueta" for="">Teléfono</label>
+							<input class="input" type="text" id="telefono">
+				
+							<label class="etiqueta" for="direccion">Dirección</label>
+							<input class="input" type="text" id="direccion">
+				
+							<label class="etiqueta" for="detalles">Detalles</label>
+							<textarea class="text_area" id="detalles"></textarea>
+				
+							<input type="submit" value="Registrar">
+						</form>
+
+						<!--DESCRIPCION DEL CONTENIDO-->
+						<div class="descripcion">
+							<i class="fas fa-user-plus"></i>
+							<p>En este formulario se registra los datos de la persona para poder crearle un préstamo.</p>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<!--PIE DE PAGINA-->
+			<footer class="pie">
+				<div class="copyright">
+					<p>&copy Derechos reservados. <a href="#">Luis RoCc</a> 2019</p>
+				</div>
+			</footer>
+		</div>
+
+	</body>
+</html>
