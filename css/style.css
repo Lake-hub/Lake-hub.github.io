@@ -193,7 +193,7 @@ label.etiqueta {
     color: white;
 }
 
-input[type="text"] {
+input[type="text"], input[type="number"], input[type="date"] {
     margin: 0px 10px 10px 10px;
     padding: 5px 5px;
     height: 30px;

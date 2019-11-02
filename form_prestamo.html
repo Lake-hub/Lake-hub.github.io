@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>cliente</title>
+    <title>prestamo</title>
     
 
     <!--FUENTES-->
@@ -15,25 +15,25 @@
 <body>
     <div class="contenedor">
         <form class="formulario" action="" method="POST">
-            <label class="etiqueta" for="telefono">Nombre</label>
-            <input type="text">
+            <label class="etiqueta" for="nombre_cliente">Nombre cliente</label>
+            <input type="text" id="nombre_cliente">
 
-            <label class="etiqueta" for="apellido">Apellido</label>
-            <input class="input" type="text" id="apellido">
+            <label class="etiqueta" for="cantidad">Cantidad</label>
+            <input class="input" type="number" id="cantidad">
 
-            <label class="etiqueta" for="">Teléfono</label>
-            <input class="input" type="text" id="telefono">
+            <label class="etiqueta" for="interes">Interés (%)</label>
+            <input class="input" type="number" min="0" max="100" step="5" id="interes">
 
-            <label class="etiqueta" for="direccion">Dirección</label>
-            <input class="input" type="text" id="direccion">
+            <label class="etiqueta" for="fecha_final">Fecha de final</label>
+            <input class="input" type="datetime" id="fecha_final">
 
             <label class="etiqueta" for="detalles">Detalles</label>
             <textarea class="text_area" id="detalles"></textarea>
 
-            <input type="submit" value="Registrar persona">
+            <input type="submit" value="Registrar préstamo">
         </form>
         <div class="descripcion">
-            <i class="fas fa-user-plus"></i>
+            <i class="fas fa-calculator"></i>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem placeat consequatur
             velit voluptatum molestias repellat quam cumque sapiente nulla? Nemo reiciendis soluta fuga
             esse voluptatem maiores aperiam cum ducimus.
