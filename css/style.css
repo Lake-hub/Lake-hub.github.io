@@ -235,6 +235,97 @@ input[type="submit"]:hover {
 }
 
 
+/*TARJETAS*/
+
+.tarjetas {
+    display: flex;
+    flex-flow: column;
+    padding: 2px 20px;
+    overflow: auto;
+    height: 530px;
+    /* width: 100%; */
+}
+
+.card {
+    background-color: #f3b8b8;
+    display: flex;
+    flex-flow: row;
+    border-radius: 5px 5px 5px 5px;
+    width: 100%;
+}
+
+    .cabeza {
+        display: flex;
+        flex-flow: column;
+        background-color: #40698a;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+        .cabeza h1 {
+            color: lightgreen;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        .cabeza h2 {
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+    .cuerpo {
+        display: flex;
+        flex-flow: column;
+        background-color: #c9dcf7;
+        padding: 10px 10px;
+        margin: 0;
+    }
+        .cuerpo h1 {
+            color: #40698a;
+            font-size: 2em;
+        }
+        .cuerpo p {
+            font-size: 1.3em;
+            color: #40698a;
+        }
+
+        .cuerpo h3 {
+            color: #267777;
+        }
+
+    .opcion {
+        background-color: #9e87af;
+        padding: 10px 10px;
+        margin: 0 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .opcion a {
+        text-decoration: none;
+        padding: 0;
+        margin: 5px 5px;
+        background-color: goldenrod;
+        border-radius: 5px 5px 5px 5px;
+        text-align: center;
+    }
+
+    .opcion a:hover {
+        background-color: darkgreen;
+        color: black;
+    }
+    .opcion a i {
+        font-size: 3em;
+        color: gainsboro;
+        padding: 0;
+        margin: 10px;
+    }
+
+
+
 /*MEDIAS QUERY*/
 @media all and (max-width: 1169px) {
     section.principal {
@@ -253,6 +344,11 @@ input[type="submit"]:hover {
 
     .enlaces a {
         margin: 0 10px;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-flow: row wrap;
     }
 
 }
@@ -284,6 +380,38 @@ input[type="submit"]:hover {
 
     .enlaces a {
         width: 100%;
+    }
+
+    .card{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .cabeza {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .cuerpo {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .opcion {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .opcion a {
+        align-self: stretch;
+        flex: 1 1 auto;
     }
 }
 
